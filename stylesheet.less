@@ -879,7 +879,7 @@ a.link{
   }
 }
 
-.text{
+.text1{
   font: 12px/27px @altFontFamily;
   color: @color-swatch6;
   text-decoration: none;
@@ -993,12 +993,41 @@ div[id$="phone_text"]{
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px){
 
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  div[id$="footer-logo"]{
+    text-align: center;
+    a{
+      display: inline-block;
+    }
+  }
+
+  div[id$="copyright_copy"],
+  div[id$="copyright_link"]{
+    display: table;
+    margin: 0 auto;
+  }
+
 }
 
 /*== Up to 640px ==================================================
 ====================================================================*/
 
 @media (max-width: 640px) {
+
+  ul.images li {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  ul.menu li{
+    .widget.image {
+      margin-right: 20px;
+    }
+  }
 
 }
 
@@ -1007,6 +1036,24 @@ div[id$="phone_text"]{
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  
+  h1.brand .companyheader {
+    display: block;
+  }
+  .widget .navigation ul li {
+    margin: 0 2px;
+    &:before{
+      display: none;
+    }
+  }
+
+  ul.menu li{
+    padding: 20px;
+    .widget.image {
+      float: none;
+      margin: 0px;
+    }
+  }
 
 }
 

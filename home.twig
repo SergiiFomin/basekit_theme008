@@ -232,19 +232,19 @@
 
                         <article class="span4">
 
-                            {{widget('content', 'content', {content: '<h3>Our Chef</h3>', lines: 'all'})|raw}}
+                            {{widget('content', 'chef-title', {content: '<h3>Our Chef</h3>', lines: 'all'})|raw}}
 
                             {{widget('image', 'chef', { 'src': asset('images/chef.jpg'), 'imageWidth': '170px'})|raw}}
 
                             <div class="overflow">
 
-                                {{widget('content', 'content', {content: '<h4>Michael Fry</h4>', lines: 'all'})|raw}}
+                                {{widget('content', 'chef-name', {content: '<h4>Michael Fry</h4>', lines: 'all'})|raw}}
 
-                                {{widget('content', 'content', {content: '<p>Vitaesaert asetyertya asetrde maeciegast nieriti vrtye remiades.Molirnatur aut oditaut. onsq ntmagni dolores eo qui ratione.</p>', lines: 'all'})|raw}}
+                                {{widget('content', 'chef-text1', {content: '<p>Vitaesaert asetyertya asetrde maeciegast nieriti vrtye remiades.Molirnatur aut oditaut. onsq ntmagni dolores eo qui ratione.</p>', lines: 'all'})|raw}}
 
                             </div>
 
-                            {{widget('content', 'content', {content: '<p>Nasgaesaert asetyertya asetrde maeciegast nieriti vrtye remiades.Molirnatur aut oditaut.</p>', lines: 'all'})|raw}}
+                            {{widget('content', 'chef-text2', {content: '<p>Nasgaesaert asetyertya asetrde maeciegast nieriti vrtye remiades.Molirnatur aut oditaut.</p>', lines: 'all'})|raw}}
 
                             {{widget('button', 'chef-button', {italic: false, text:'learn more', 'align':'widget-align-left'})|raw}}
 
@@ -268,7 +268,7 @@
 
                         <article class="span3">
 
-                            {{widget('content', 'content', {content: '<h3>Latest Tweets</h3>', lines: 'all'})|raw}}
+                            {{widget('content', 'loc-title', {content: '<h3>Locations</h3>', lines: 'all'})|raw}}
 
                             {{widget('logo', 'aside-logo', {"defaultlogo": asset('images/aside-logo.png')})|raw}}
 
@@ -317,7 +317,7 @@
 
                         <article class="span4">
 
-                            {{widget('logo', 'logo', {"defaultlogo": asset('images/footer-logo.png')})|raw}}
+                            {{widget('logo', 'footer-logo', {"defaultlogo": asset('images/footer-logo.png')})|raw}}
 
                             {{widget('space', 'space', {'height': '30'})|raw}}
 
