@@ -1,0 +1,348 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+
+    <!--header-->
+    <header>
+
+        <div class="header">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <article class="span12">
+
+                        <h1 class="brand">
+                            
+                            {{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}
+
+                        </h1>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!--navigation-->
+    <section class="nav">
+
+        <div class="container">
+
+            <div class="row">
+
+                <article class="span12">
+
+                    {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+
+                </article>
+
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!--showcase-->
+    <section id="showcase">
+
+        {{widget('responsiveslideshow', 'responsiveslideshow', {'duration':'3', 'transSpeed': '1000', 'transType': 'fade', 'showButtons': true, 'showBullets': false, 'allowPause': false, 'allowLoop': false, 'images':[{'imageHeight':'603', 'imageWidth':'1500', 'url':'http://placehold.it/603x1500', 'title':'test title', 'description': 'test desc'},{'imageHeight':'603', 'imageWidth':'1500', 'url':'http://placehold.it/603x1500', 'title':'test title', 'description': 'test desc'},{'imageHeight':'603', 'imageWidth':'1500', 'url':'http://placehold.it/603x1500', 'title':'test title', 'description': 'test desc'},{'imageHeight':'603', 'imageWidth':'1500', 'url':'http://placehold.it/603x1500', 'title':'test title', 'description': 'test desc'}]})|raw}}
+
+    </section>
+
+    <!--maintop-->
+    <section id="maintop">
+
+        <div class="container">
+
+            <div class="row">
+
+                <article class="span12 center">
+
+                    {{widget('content', 'slogan-title', {content: '<h1>Welcome Message!</h1>', lines: 'all'})|raw}}
+
+                    {{widget('content', 'slogan-text', {content: '<p>Beciegast nveriti vitaesaert asety kertya aset aplica boserde nerafae kertyuraue styasnemo faserani  iasera khatrsasas ptaiadeser daesraeds. Casrolern atur aut oditaut. onsequuntur magni dolqui ratione voluptatemsequi nesciunt orasario jauystase joasuaserya vytarsa numquam eius modi teincidunt, ut labore et dolore magnam liaseras.</p>', lines: 'all'})|raw}}
+
+                    {{widget('button', 'slogan-button', {italic: false, text:'More', 'align':'widget-align-center'})|raw}}
+
+                    {{widget('space', 'space', {'height': '50'})|raw}}
+
+                    <ul class="images">
+
+                        <li>
+
+                            {{widget('image', 'page1-img1', { 'src': asset('images/page1-img1.jpg'), 'imageSize': '390 x 273', 'imageWidth': '768px'})|raw}}
+
+                            {{widget('content', 'image-title1', {content: '<h2>Delicious Salads</h2>', lines: 'all'})|raw}}
+
+                        </li>
+
+                        <li>
+
+                            {{widget('content', 'image-title2', {content: '<h2>Popular Dishes</h2>', lines: 'all'})|raw}}
+
+                            {{widget('image', 'page1-img2', { 'src': asset('images/page1-img2.jpg'), 'imageSize': '390 x 273', 'imageWidth': '768px'})|raw}}
+
+                        </li>
+
+                        <li>
+
+                            {{widget('image', 'page1-img3', { 'src': asset('images/page1-img3.jpg'), 'imageSize': '390 x 273', 'imageWidth': '768px'})|raw}}
+
+                            {{widget('content', 'image-title3', {content: '<h2>Vegan Menu</h2>', lines: 'all'})|raw}}
+
+                        </li>
+
+                    </ul>
+
+                </article>
+
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!--content-top-->
+    <section id="content-top">
+
+        <div class="container">
+
+            <div class="row">
+
+                <section class="span12">
+
+                    <div class="row">
+
+                        <article class="span6">
+
+                            <ul class="menu">
+
+                                <li>
+
+                                    {{widget('image', 'page1-img4', { 'src': asset('images/page1-img4.jpg'), 'imageSize': '188 x 207', 'imageWidth': '188px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'menu-first-title1', {content: '<h3>Simple Breakfasts</h3>', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'menu-second-title1', {content: '<h5>Migytafsas deuauyt asares</h5>', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'menu-text1', {content: '<h6>Kictaesaert asetyertya aset aplicibrdedas.</h6>', lines: 'all'})|raw}}
+
+                                        {{widget('button', 'menu-button1', {italic: false, text:'learn more', 'align':'widget-align-left'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    {{widget('image', 'page1-img5', { 'src': asset('images/page1-img5.jpg'), 'imageSize': '188 x 207', 'imageWidth': '188px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'menu-first-title2', {content: '<h3>Simple Breakfasts</h3>', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'menu-second-title2', {content: '<h5>Migytafsas deuauyt asares</h5>', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'menu-text2', {content: '<h6>Kictaesaert asetyertya aset aplicibrdedas.</h6>', lines: 'all'})|raw}}
+
+                                        {{widget('button', 'menu-button2', {italic: false, text:'learn more', 'align':'widget-align-left'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+                        </article>
+
+                        <article class="span6">
+
+                            <ul class="menu">
+
+                                <li>
+
+                                    {{widget('image', 'page1-img6', { 'src': asset('images/page1-img6.jpg'), 'imageSize': '188 x 207', 'imageWidth': '188px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'menu-first-title3', {content: '<h3>Simple Breakfasts</h3>', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'menu-second-title3', {content: '<h5>Migytafsas deuauyt asares</h5>', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'menu-text3', {content: '<h6>Kictaesaert asetyertya aset aplicibrdedas.</h6>', lines: 'all'})|raw}}
+
+                                        {{widget('button', 'menu-button3', {italic: false, text:'learn more', 'align':'widget-align-left'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    {{widget('image', 'page1-img7', { 'src': asset('images/page1-img6.jpg'), 'imageSize': '188 x 207', 'imageWidth': '188px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'menu-first-title4', {content: '<h3>Simple Breakfasts</h3>', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'menu-second-title4', {content: '<h5>Migytafsas deuauyt asares</h5>', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'menu-text4', {content: '<h6>Kictaesaert asetyertya aset aplicibrdedas.</h6>', lines: 'all'})|raw}}
+
+                                        {{widget('button', 'menu-button4', {italic: false, text:'learn more', 'align':'widget-align-left'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!--content-->
+    <div class="global">
+
+        <div class="container">
+
+            <div class="row">
+
+                <section class="span12">
+
+                    <div class="row">
+
+                        <article class="span4">
+
+                            {{widget('content', 'content', {content: '<h3>Our Chef</h3>', lines: 'all'})|raw}}
+
+                            {{widget('image', 'chef', { 'src': asset('images/chef.jpg'), 'imageWidth': '170px'})|raw}}
+
+                            <div class="overflow">
+
+                                {{widget('content', 'content', {content: '<h4>Michael Fry</h4>', lines: 'all'})|raw}}
+
+                                {{widget('content', 'content', {content: '<p>Vitaesaert asetyertya asetrde maeciegast nieriti vrtye remiades.Molirnatur aut oditaut. onsq ntmagni dolores eo qui ratione.</p>', lines: 'all'})|raw}}
+
+                            </div>
+
+                            {{widget('content', 'content', {content: '<p>Nasgaesaert asetyertya asetrde maeciegast nieriti vrtye remiades.Molirnatur aut oditaut.</p>', lines: 'all'})|raw}}
+
+                            {{widget('button', 'chef-button', {italic: false, text:'learn more', 'align':'widget-align-left'})|raw}}
+
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+
+                        </article>
+
+                        <article class="span1"></article>
+
+                        <article class="span3">
+
+                            {{widget('content', 'content', {content: '<h3>Latest Tweets</h3>', lines: 'all'})|raw}}
+
+                            {{widget('twitter', 'twitter', {'searchKey': 'basekit', 'searchType': 'username', 'count': '2','refreshTime': '1800000','includeRts': '0'})|raw}}
+
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+
+                        </article>
+
+                        <article class="span1"></article>
+
+                        <article class="span3">
+
+                            {{widget('content', 'content', {content: '<h3>Latest Tweets</h3>', lines: 'all'})|raw}}
+
+                            {{widget('logo', 'aside-logo', {"defaultlogo": asset('images/aside-logo.png')})|raw}}
+
+                            {{widget('companyaddress', 'companyaddress', {})|raw}}
+
+                            {{widget('line', 'line', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
+
+                            {{widget('content', 'mail', {content: '<a href="mailto:info@demolink.org">info@demolink.org</a>', lines: 'all'})|raw}}
+
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+
+                        </article>
+
+                    </div>
+
+                    {{zone('main')|raw}}
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+
+                <section class="span12">
+
+                    <div class="row">
+
+                        {{widget('space', 'space', {'height': '40'})|raw}}
+
+                        <article class="span4">
+
+                            {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                        <article class="span4">
+
+                            {{widget('logo', 'logo', {"defaultlogo": asset('images/footer-logo.png')})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                        <article class="span4">
+
+                            {{widget('content', 'copyright_copy', {content: '&copy; &nbsp; 2013 &nbsp;', lines: 'all'})|raw}}
+
+                            {{widget('content', 'copyright_link', {content: '<a href="#">Privacy Policy</a>', lines: 'all'})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </footer>
+    
+</div>
+
+{% endblock %}

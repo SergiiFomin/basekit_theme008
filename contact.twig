@@ -1,0 +1,167 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+
+    <!--header-->
+    <header>
+
+        <div class="header">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <article class="span12">
+
+                        <h1 class="brand">
+                            
+                            {{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}
+
+                        </h1>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!--navigation-->
+    <section class="nav">
+
+        <div class="container">
+
+            <div class="row">
+
+                <article class="span12">
+
+                    {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+
+                </article>
+
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!--content-->
+    <div class="global">
+
+        <div class="container">
+
+            <div class="row">
+
+                <section class="span12">
+
+                    {{widget('map', 'map', {'height': '470', 'zoom': '15', 'address': 'profile'})|raw}}
+
+                    {{widget('space', 'space', {'height': '30'})|raw}}
+
+                    <div class="row">
+
+                        <article class="span3">
+                            
+                            {{widget('content', 'title1', {content: '<h2>Postal Address</h2>', lines: 'all'})|raw}}
+
+                            {{widget('content', 'content', {content: '<span class="text">8901 Marmora Road, Glasgow, D04 89GR.</span>', lines: 'all'})|raw}}
+
+                            {{widget('content', 'content', {content: '<span class="width">Telephone:</span>+1 959 603 6035', lines: 'all'})|raw}}
+
+                            {{widget('content', 'content', {content: '<span class="width">FAX:</span>+1 504 889 9898', lines: 'all'})|raw}}
+
+                            {{widget('content', 'content', {content: '<p>E-mail: <a href="mailto:mail@demolink.org">mail@demolink.org</a></p>', lines: 'all'})|raw}}
+
+                            {{widget('content', 'content', {content: '<span class="text">9867 Mill Road, Cambridge, MG09 99HT </span>', lines: 'all'})|raw}}
+
+                            {{widget('content', 'content', {content: '<span class="width">Telephone:</span>+1 959 603 6035', lines: 'all'})|raw}}
+
+                            {{widget('content', 'content', {content: '<span class="width">FAX:</span>+1 504 889 9898', lines: 'all'})|raw}}
+                            
+                            {{widget('content', 'content', {content: '<p>E-mail: <a href="mailto:mail@demolink.org">mail@demolink.org</a></p>', lines: 'all'})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                        <article class="span1">
+
+                        </article>
+
+                        <article class="span8">
+                            
+                            {{widget('content', 'title2', {content: '<h2>Contact Form</h2>', lines: 'all'})|raw}}
+
+                            {{zone('main')|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+                            
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+
+                <section class="span12">
+
+                    <div class="row">
+
+                        {{widget('space', 'space', {'height': '40'})|raw}}
+
+                        <article class="span4">
+
+                            {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                        <article class="span4">
+
+                            {{widget('logo', 'logo', {"defaultlogo": asset('images/footer-logo.png')})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                        <article class="span4">
+
+                            {{widget('content', 'copyright_copy', {content: '&copy; &nbsp; 2013 &nbsp;', lines: 'all'})|raw}}
+
+                            {{widget('content', 'copyright_link', {content: '<a href="#">Privacy Policy</a>', lines: 'all'})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </footer>
+    
+</div>
+
+{% endblock %}

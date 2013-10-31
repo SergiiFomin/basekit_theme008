@@ -1,0 +1,207 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+
+    <!--header-->
+    <header>
+
+        <div class="header">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <article class="span12">
+
+                        <h1 class="brand">
+                            
+                            {{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}
+
+                        </h1>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!--navigation-->
+    <section class="nav">
+
+        <div class="container">
+
+            <div class="row">
+
+                <article class="span12">
+
+                    {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+
+                </article>
+
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!--content-->
+    <div class="global">
+
+        <div class="container">
+
+            <div class="row">
+
+                <section class="span12">
+
+                    <div class="row">
+
+                        <section class="span8">
+
+                            {{widget('content', 'about-title1', {content: '<h3>Useful Links</h3>', lines: 'all'})|raw}}
+
+                            <div class="row">
+
+                                <article class="span4">
+
+                                    {{widget('content', 'link1', {content: '<a class="link" href="mailto:www.demolink.org">www.demolink.org</a>', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'about-text1', {content: '<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</p>', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'link2', {content: '<a class="link" href="mailto:www.demolink.org">www.demolink.org</a>', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'about-text2', {content: '<p>Ilo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui.</p>', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'link3', {content: '<a class="link" href="mailto:www.demolink.org">www.demolink.org</a>', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'about-text3', {content: '<p>Ilo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut.</p>', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'link4', {content: '<a class="link" href="mailto:www.demolink.org">www.demolink.org</a>', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'about-text4', {content: '<p>Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo.</p>', lines: 'all'})|raw}}
+
+                                    {{widget('space', 'space', {'height': '50'})|raw}}
+
+                                </article>
+
+                                <article class="span4">
+
+                                    {{widget('content', 'link1', {content: '<a class="link" href="mailto:www.demolink.org">www.demolink.org</a>', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'about-text1', {content: '<p>Ilo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui.</p>', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'link2', {content: '<a class="link" href="mailto:www.demolink.org">www.demolink.org</a>', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'about-text2', {content: '<p>Ilo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut.</p>', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'link3', {content: '<a class="link" href="mailto:www.demolink.org">www.demolink.org</a>', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'about-text3', {content: '<p>Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo.</p>', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'link4', {content: '<a class="link" href="mailto:www.demolink.org">www.demolink.org</a>', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'about-text4', {content: '<p>Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo.</p>', lines: 'all'})|raw}}
+
+                                    {{widget('space', 'space', {'height': '50'})|raw}}
+                                    
+                                </article>
+
+                            </div>
+
+                        </section>
+
+                        <section class="span4">
+
+                            {{widget('content', 'about-title1', {content: '<h3>Thematic Links</h3>', lines: 'all'})|raw}}
+
+                            <ul class="links">
+
+                                <li>{{widget('content', 'link1', {content: '<a href="#">Praesent vestibulum molestie lacus</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'link2', {content: '<a href="#">Aenean nonummy hend mauris Phaselus</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'link3', {content: '<a href="#">porta. Fusce suscipit varius mi</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'link4', {content: '<a href="#">Cum sociis natoque penatibus et</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'link5', {content: '<a href="#">magnis dis parturient montes nasc</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'link6', {content: '<a href="#">Fusce feugiat malesuada odio</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'link7', {content: '<a href="#">Morbi nunc odio gravida at cursus</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'link8', {content: '<a href="#">Maecenas tristique orci ac sem</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'link9', {content: '<a href="#">Duis ultricies pharetra magna</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'link10', {content: '<a href="#">Donec accumsan malesuada orci</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'link11', {content: '<a href="#">Lorem ipsum dolor sit ame</a>', lines: 'all'})|raw}}</li>
+
+                            </ul>
+
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                            
+                        </section>
+
+                    </div>
+
+                    {{zone('main')|raw}}
+                    
+                    {{widget('space', 'space', {'height': '30'})|raw}}
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+
+                <section class="span12">
+
+                    <div class="row">
+
+                        {{widget('space', 'space', {'height': '40'})|raw}}
+
+                        <article class="span4">
+
+                            {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                        <article class="span4">
+
+                            {{widget('logo', 'logo', {"defaultlogo": asset('images/footer-logo.png')})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                        <article class="span4">
+
+                            {{widget('content', 'copyright_copy', {content: '&copy; &nbsp; 2013 &nbsp;', lines: 'all'})|raw}}
+
+                            {{widget('content', 'copyright_link', {content: '<a href="#">Privacy Policy</a>', lines: 'all'})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </footer>
+    
+</div>
+
+{% endblock %}
