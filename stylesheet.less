@@ -494,8 +494,8 @@ header, footer, #content{
   li{
     float: left;
     list-style: none;
-    width: 23%;
-    margin: 0 1% 20px;
+    width: 24%;
+    margin: 0 1% 20px 0;
     .inner{
       background: none !important;
       a{
@@ -587,7 +587,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1{
   font: 36px/40px @altFontFamily;
-  color: @color-swatch3;
+  color: #8b8b8b;
   &.brand{
     font: 60px/64px 'Shojumaru', cursive;
     margin: 0px;
@@ -626,7 +626,7 @@ h1{
 
 h2{
   font: 30px/40px @altFontFamily;
-  color: @color-swatch3;
+  color: #8b8b8b;
   padding-bottom: 20px;
 }
 
@@ -879,11 +879,25 @@ a.link{
   }
 }
 
-.text1{
-  font: 12px/27px @altFontFamily;
-  color: @color-swatch6;
-  text-decoration: none;
-  text-transform: uppercase;
+.address{
+  div[id$="content"]{
+    .text{
+      font: 12px/27px @altFontFamily;
+      color: @color-swatch6;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .width{
+      display: inline-block;
+      width: 98px;
+    }
+    a{
+      color: @color-swatch2;
+      &:hover{
+        color: @color-swatch3;
+      }
+    }
+  }
 }
 
 ul.links{
