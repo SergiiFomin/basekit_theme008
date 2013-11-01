@@ -376,35 +376,60 @@ header{
     padding: 0;
     .slideshow-image{
       width: 100%;
-    }    
+    }
+    .btn-play,
     .btn-prev, 
     .btn-next {
-      height: 55px !important;
       top: 50% !important;
-      width: 40px !important;
+      margin-top: -16px;
       text-indent: 9999em;
       overflow: hidden;
+      width: 32px !important;
+      height: 32px !important;
+      font-size: 0;
+      line-height: 0;
+      .opacity(100);
+      &:before{
+        display: block;
+        font-size: 30px;
+        line-height: 30px;
+        color: @color-swatch3;
+        font: 30px/30px 'FontAwesome';
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      &:hover:before{
+        color: @color-swatch2;
+      }
     }
     .btn-prev{
-      left: 40px !important;
-      &:hover{
-        background-color: @color-swatch6;
+      &:before{
+        content: "\f137";
       }
     } 
     .btn-next{
-
-      right: 40px !important;
-      &:hover{
-        background-color: @color-swatch6;
+      &:before{
+        content: "\f138";
       }
+    }
+  }
+  .btn-play{
+    left: 50% !important;
+    margin-left: -15px;
+    &:before{
+      content: "\f04b";
+    }
+    &.pause:before{
+      content: "\f04c";
     }
   }
   .slideshow-widget-controls{
     position: absolute;
     z-index: 999;
     width: 100%;
-    bottom: 38px;
-    right: 46px;
+    bottom: 20px;
+    right: 20px;
     text-align: right !important;
     .dot {
       width: 11px;
