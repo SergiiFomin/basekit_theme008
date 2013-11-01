@@ -86,32 +86,32 @@
         },
         "font5": { // P tag
             "font-family": "Helvetica, arial", // @font-swatch5-font-family
-            "font-size": "14px",        // @font-swatch5-font-size
+            "font-size": "15px",        // @font-swatch5-font-size
             "font-weight": "inherit",   // @font-swatch5-font-weight
-            "line-height": "28px",      // @font-swatch5-line-height
-            "color": "@color-swatch5",  // @font-swatch5-color
+            "line-height": "22px",      // @font-swatch5-line-height
+            "color": "@color-swatch2",  // @font-swatch5-color
             "letter-spacing": "inherit" // @font-swatch5-letter-spacing
         },
         "font6": { // Navigation
-            "font-family": "Arvo",      // @font-swatch6-font-family
-            "font-size": "15px",        // @font-swatch6-font-size
+            "font-family": "Georgia",      // @font-swatch6-font-family
+            "font-size": "22px",        // @font-swatch6-font-size
             "font-weight": "inherit",   // @font-swatch6-font-weight
-            "line-height": "inherit",   // @font-swatch6-line-height
-            "color": "@color-swatch6",  // @font-swatch6-color
-            "color-hover": "@color-swatch2", // @font-swatch6-color-hover
-            "letter-spacing": "inherit",// @font-swatch6-letter-spacing
-            "background-color": "@color-swatch2", // @font-swatch6-background-color
-            "background-color-hover": "@color-swatch1" // @font-swatch6-background-color-hover
+            "line-height": "30px",   // @font-swatch6-line-height
+            "color": "@color-swatch1",  // @font-swatch6-color
+            "color-hover": "@color-swatch3", // @font-swatch6-color-hover
+            "letter-spacing": "inherit"//,// @font-swatch6-letter-spacing
+            //"background-color": "@color-swatch2", // @font-swatch6-background-color
+            //"background-color-hover": "@color-swatch1" // @font-swatch6-background-color-hover
         },
         "font7": { // Buttons
-            "font-family": "Helvetica, arial",  // @font-swatch17-font-family
-            "font-size": "14px",        // @font-swatch7-font-size
+            "font-family": "Georgia",  // @font-swatch17-font-family
+            "font-size": "15px",        // @font-swatch7-font-size
             "font-weight": "inherit",   // @font-swatch7-font-weight
-            "line-height": "inherit",   // @font-swatch7-line-height
-            "color": "@color-swatch1",  // @font-swatch7-color
+            "line-height": "20px",   // @font-swatch7-line-height
+            "color": "@color-swatch5",  // @font-swatch7-color
             "letter-spacing": "inherit",// @font-swatch7-letter-spacing
-            "background-color": "@color-swatch3", // @font-swatch7-background-color
-            "background-color-hover": "darken(@color-swatch3,20%)" // @font-swatch7-background-color-hover
+            //"background-color": "@color-swatch3", // @font-swatch7-background-color
+            //"background-color-hover": "darken(@color-swatch3,20%)" // @font-swatch7-background-color-hover
         },
         "font8": { // Feature Title
             "font-family": "Arvo",      // @font-swatch8-font-family
