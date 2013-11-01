@@ -7,13 +7,10 @@
 @color-swatch1:            #ffffff;
 @color-swatch2:            #929292;
 @color-swatch3:            #bf0000;
-@color-swatch4:            #585858;
+@color-swatch5:            #585858;
 @color-swatch5:            #8b8b8b;
 @color-swatch6:            #4e4134;
 @color-swatch7:            #656463;
-
-@color-swatch6Light:       #a0a0a0;
-@color-swatch6Lighter:     #8c8b8b;
 
 //
 
@@ -449,7 +446,7 @@ header{
   .box-shadow(none);
   text-transform: lowercase;
   text-shadow: none;
-  color: @color-swatch4;
+  color: @color-swatch5;
   text-decoration: none;
   background: none;
   position: relative;
@@ -467,7 +464,7 @@ header{
     top: 6px;
   }
   &:hover {
-    color: @color-swatch4;
+    color: @color-swatch5;
     text-decoration: none;
     background: none;
     &:after{
@@ -580,14 +577,19 @@ a{
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h5, h6 {
   margin: 0;
   padding: 0 0 22px;
 }
 
 h1{
-  font: 36px/40px @altFontFamily;
-  color: #8b8b8b;
+  font-family: @font-swatch1-font-family;
+  font-size: @font-swatch1-font-size;
+  font-weight: @font-swatch1-font-weight;
+  line-height: @font-swatch1-line-height;
+  color: ;
+  /*font: 36px/40px @altFontFamily;
+  color: @color-swatch5;*/
   &.brand{
     font: 60px/64px 'Shojumaru', cursive;
     margin: 0px;
@@ -625,33 +627,33 @@ h1{
 }
 
 h2{
-  font: 30px/40px @altFontFamily;
-  color: #8b8b8b;
+  font-family: @font-swatch2-font-family;
+  font-size: @font-swatch2-font-size;
+  font-weight: @font-swatch2-font-weight;
+  line-height: @font-swatch2-line-height;
+  /*font: 30px/40px @altFontFamily;
+  color: @color-swatch5;*/
   padding-bottom: 20px;
 }
 
 h3{
-  font: 26px/30px @altFontFamily;
-  color: #8b8b8b;
+  font-family: @font-swatch3-font-family;
+  font-size: @font-swatch3-font-size;
+  font-weight: @font-swatch3-font-weight;
+  line-height: @font-swatch3-line-height;
+  /*font: 26px/30px @altFontFamily;
+  color: @color-swatch5;*/
   padding: 0 0 34px;
 }
 
-h4{
-  font: 24px/30px @altFontFamily;
-  color: #8b8b8b;
-  padding: 0 0 6px;
-}
-
 h5{
-  font: 20px/28px 'Lora', serif;
-  color: #adadad;
-  padding-bottom: 3px;
-}
-
-h6{
-  font: 15px/22px 'Lora', serif;
-  color: #c6c6c6;
-  padding-bottom: 5px;
+  font-family: @font-swatch4-font-family;
+  font-size: @font-swatch4-font-size;
+  font-weight: @font-swatch4-font-weight;
+  line-height: @font-swatch4-line-height;
+  /*font: 24px/30px @altFontFamily;
+  color: @color-swatch5;*/
+  padding: 0 0 6px;
 }
 
 div[id$="center"]{
