@@ -364,7 +364,6 @@ header{
   background-image:image('/images/template/nav.jpg');
   background-position: center 0;
   background-repeat: repeat;
-  overflow: hidden;
 }
 
 .responsiveslideshow{
@@ -377,41 +376,78 @@ header{
     .slideshow-image{
       width: 100%;
     }
-    .btn-play,
-    .btn-prev, 
-    .btn-next {
-      top: 50% !important;
-      margin-top: -16px;
-      text-indent: 9999em;
-      overflow: hidden;
-      width: 32px !important;
-      height: 32px !important;
-      font-size: 0;
-      line-height: 0;
-      .opacity(100);
-      &:before{
-        display: block;
-        font-size: 30px;
-        line-height: 30px;
-        color: @color-swatch3;
-        font: 30px/30px 'FontAwesome';
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-      &:hover:before{
-        color: @color-swatch2;
-      }
+  }
+
+  /* -- Buttons -- */
+
+  .btn-prev, 
+  .btn-next {
+    top: 100% !important;
+    left: 50% !important;
+    margin-top: -23px;
+    text-indent: 9999em;
+    overflow: hidden;
+    width: 46px !important;
+    height: 46px !important;
+    font-size: 0;
+    line-height: 0;
+    .opacity(100);
+    background-color: @color-swatch1;
+    color: @color-swatch2;
+    text-align: center;
+    .border-radius(1000px);
+    z-index: 999;
+    &:before{
+      display: block;
+      font-size: 30px;
+      line-height: 46px;
+      font: 20px/46px 'FontAwesome';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 46px;
+      text-align: center;
     }
-    .btn-prev{
-      &:before{
-        content: "\f137";
-      }
-    } 
-    .btn-next{
-      &:before{
-        content: "\f138";
-      }
+    &:hover:before{
+      background-color: @color-swatch2;
+      color: @color-swatch1;
+    }
+  }
+  .btn-prev{
+    margin-left: -48px;
+    &:before{
+      content: "\f053";
+    }
+  } 
+  .btn-next{
+    margin-right: 0px;
+    &:before{
+      content: "\f054";
+    }
+  }
+
+  .btn-play {
+    top: 50% !important;
+    margin-top: -16px;
+    text-indent: 9999em;
+    overflow: hidden;
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 0;
+    line-height: 0;
+    .opacity(100);
+    &:before{
+      display: block;
+      font-size: 30px;
+      line-height: 30px;
+      color: @color-swatch3;
+      font: 30px/30px 'FontAwesome';
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    &:hover:before{
+      color: @color-swatch2;
     }
   }
   .btn-play{
@@ -424,6 +460,7 @@ header{
       content: "\f04c";
     }
   }
+
   .slideshow-widget-controls{
     position: absolute;
     z-index: 999;
@@ -445,6 +482,9 @@ header{
       }
     }
   }
+
+  /* -- end Buttons -- */
+
   .image-wrapper{
     position: relative;
     &:before{
