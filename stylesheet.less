@@ -527,10 +527,12 @@ header{
     right: 0;
     top: 6px;
   }
-  &:hover {
+  &:hover, &:focus, &:active {
     color: @color-swatch5;
     text-decoration: none;
     background: none;
+    box-shadow: none;
+    outline: none;
     &:after{
       background-position: 0 0px;
     }
