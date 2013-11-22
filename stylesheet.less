@@ -29,6 +29,13 @@
 @linkColor:             @color-swatch3;
 @linkColorHover:        @dark;
 
+// Social
+// -------------------------
+@socialColor:             @color-swatch1;
+@socialColorHover:        @color-swatch2;
+@socialBackground:        @color-swatch1;
+@socialBackgroundHover:   @color-swatch3;
+
 // Typography
 // -------------------------
 @sansFontFamily:        Arial, Helvetica, sans-serif;
@@ -231,38 +238,36 @@
 
 /*Forms*/
 
-.container{
-  textarea{
-    resize: none;
-  }
-  select, 
-  textarea, 
-  input[type="text"], 
-  input[type="password"], 
-  input[type="datetime"], 
-  input[type="datetime-local"], 
-  input[type="date"], 
-  input[type="month"], 
-  input[type="time"], 
-  input[type="week"], 
-  input[type="number"], 
-  input[type="email"], 
-  input[type="url"], 
-  input[type="search"], 
-  input[type="tel"], 
-  input[type="color"], 
-  .uneditable-input{
-    font-size: 12px;
-    .box-sizing(border-box);
-    box-shadow: none;
-    margin-bottom: 20px !important;
-    color: @dark !important;
-    .transition(all .2s linear);
-    border: 1px solid #f6f0ec !important;
-    &:focus{
-      background: @color-swatch5 !important;
-      color: @color-swatch1 !important;
-    }
+textarea{
+  resize: none;
+}
+select, 
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], 
+.uneditable-input{
+  font-size: 12px;
+  .box-sizing(border-box);
+  box-shadow: none;
+  margin-bottom: 20px !important;
+  color: @dark !important;
+  .transition(all .2s linear);
+  border: 1px solid #f6f0ec !important;
+  &:focus{
+    background: @color-swatch5 !important;
+    color: @color-swatch1 !important;
   }
 }
 
@@ -502,6 +507,8 @@ header{
 
 /*------ content ------- */
 
+button.button,
+input.button,
 .btn {
   font: 15px/20px @altFontFamily;
   display: inline-block;
@@ -515,6 +522,8 @@ header{
   background: none;
   position: relative;
   padding: 0 16px 0 0;
+  width: auto;
+  height: auto;
   &:after{
     display: block;
     width: 11px;
@@ -554,6 +563,7 @@ header, footer, #content{
 
 .gallery-widget{
   margin: 0;
+  overflow: hidden;
   li{
     float: left;
     list-style: none;
@@ -581,38 +591,36 @@ header, footer, #content{
 
 /* end background image */
 
-.container{
-  input, textarea {
-    position: relative;
-    outline: none;
-    border: none;
-    .border-radius(0);
-    .box-shadow(0 0 0);
+input, textarea {
+  position: relative;
+  outline: none;
+  border: none;
+  .border-radius(0);
+  .box-shadow(0 0 0);
 
-    line-height: 20px;
-    color: @textColor;
-    padding: 5px 10px;
-    width: 100%;
-    margin: 0;
-    &:focus {
-      .box-shadow(0 0 0);
-      border: none;
-      background: none;
-    }
-    &:focus:invalid:focus{
-      .box-shadow(0 0 0);
-      border: none;
-      background: none;
-    }
+  line-height: 20px;
+  color: @textColor;
+  padding: 5px 10px;
+  width: 100%;
+  margin: 0;
+  &:focus {
+    .box-shadow(0 0 0);
+    border: none;
+    background: none;
   }
-  input{
-    .size(30px, 100%);   
-    .box-sizing(border-box); 
+  &:focus:invalid:focus{
+    .box-shadow(0 0 0);
+    border: none;
+    background: none;
   }
-  textarea{
-    width: 100%;
-    .box-sizing(border-box); 
-  }
+}
+input{
+  .size(30px, 100%);   
+  .box-sizing(border-box); 
+}
+textarea{
+  width: 100%;
+  .box-sizing(border-box); 
 }
 
 p {
@@ -656,40 +664,6 @@ h1{
   color: @font-swatch1-color;*/
   font: 36px/40px @altFontFamily;
   color: @color-swatch5;
-  &.brand{
-    font: 60px/64px 'Shojumaru', cursive;
-    margin: 0px;
-    padding: 0;
-    text-align: center;
-    .companyheader{
-      display: inline-block;
-    }
-    a{
-      color: @color-swatch3;
-      text-decoration: none;
-      position: relative;
-      overflow: hidden;
-      &:hover{
-        color: @color-swatch1;
-      }
-      .logo{
-        margin: 0px;
-        font-size: 0;
-        line-height: 0;
-        img{
-          display: block;
-        }
-        a{
-          display: inline-block;
-        }   
-      }
-      .company-name{
-        font: 60px/64px 'Shojumaru', cursive;
-        color: @color-swatch1;
-        padding: 0px;
-      }
-    }   
-  }
 }
 
 h2{
@@ -936,6 +910,9 @@ div[id$="aside-logo"]{
   margin-bottom: 20px;
 }
 
+.widget.logo{
+  text-align: center;
+}
 
 a.link{
   font: 12px/27px @altFontFamily;
@@ -991,21 +968,22 @@ ul.links{
 
 /*------ footer ------- */
 
-ul.twitter{
-  margin: 0;
-  li{
-    list-style: none;
-    margin-bottom: 18px;
-  }
-  .twitter-profile-pic{
-    float: left;
-    margin-right: 20px;
-  }
-  .twitter-content{
-    overflow: hidden;
-    p{
-      margin: 0;
-      padding: 0;
+.twitter{
+  ul.twitter{
+    margin: 0;
+    li{
+      list-style: none;
+      margin-bottom: 18px;
+      overflow: hidden;
+      .twitter-profile-pic{
+        float: left;
+        margin-right: 20px;
+      }
+      .twitter-content{
+        p{
+          padding-bottom: 0px;
+        }
+      }
     }
   }
 }
@@ -1088,6 +1066,52 @@ ul.twitter{
         }
       }
     }
+  }
+}
+
+.widget.tweet {
+   padding: 14px 0;
+   a {
+    padding: 8px 10px 8px 32px;
+    margin: 0;
+    border: 1px solid #057ed0;
+    background-image: image('/images/twitter.png');
+    background-repeat: no-repeat;
+    background-position: 10px;
+
+    margin: 0em;
+    .border-radius(4px);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+    font-family: @font-swatch2-font-family;
+    font-size:.9em;
+    font-weight:@font-swatch7-font-weight;
+    background-color: #32bbef;
+    color: @color-swatch1;
+    text-decoration: none;
+    text-shadow: 0 1px 0px rgba(0,0,0,0.3);
+    cursor: pointer;
+    &:hover, &:active {
+      border: 1px solid #096eb3;
+      background-color: #2cacdc;
+    }
+  }
+}
+
+.widget.clicktocall a {
+  background-image: image('/images/ic-call.png');
+  background-color: @color-swatch3;
+  background-position: 10px;
+  background-repeat: no-repeat;
+  padding: 10px 10px 10px 38px;
+  margin: 0;
+  color: @color-swatch1;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  &:hover {
+    /*background-image: image('/images/ic-call.png');*/
+    background-color: @color-swatch2;
+    text-decoration: none;
   }
 }
 
@@ -1226,9 +1250,6 @@ div[id$="phone_text"]{
 /* Landscape phones and down */
 @media (max-width: 480px) {
   
-  h1.brand .companyheader {
-    display: block;
-  }
   .widget .navigation ul li {
     margin: 0 2px;
     &:before{
